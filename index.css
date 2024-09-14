@@ -1,43 +1,79 @@
 body{
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    font-family: Arial , sans-serif;
+    background-color: rgba(240, 248, 255, 0.832);
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.meatherForm{
+    margin: 20px;
+}
+.cityInput{
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid hsla(0, 0%, 20%, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    width: 200px;
+}
+button[type="submit"]{
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: rgb(9, 138, 9);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button[type="submit"]:hover{
+    background-color: hsl(120, 80%, 36%);
+}
+.card{
+    background: linear-gradient(180deg , hsl(210 , 100% , 75%) ,hsl(40 , 100% , 75%) );
+    padding: 50px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 5%);
+    border-radius: 14px;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 h1{
     font-size: 3.5rem;
-    color: hsla(0, 3%, 11%, 0.848);
-    filter: drop-shadow( 0 0 5px black);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-weight: bold;
+    filter: drop-shadow(0 0 5px hsla(0, 0%, 0%, 0.518));
+}
+p{
+    margin: 5px 0;
+    font-size: 1.5rem;
     font-weight: bold;
 }
-#choices{
-    margin-bottom: 30px;
+.cityDisplay .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: hsla(0, 0%, 0%, 0.75);
+    margin-bottom: 25px;
 }
-#choices button{
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.discDisplay{
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+}
+.weatherEmoji{
+    margin: 0;
     font-size: 7.5rem;
-    min-width: 160px;
-    margin: 0 10px;
-    border-radius: 250px;
-    background-color: rgb(37, 104, 65);
-    cursor: pointer;
-    transition: background-color 0.5s  ease;
 }
-#choices button:hover{
-    background-color: rgb(8, 171, 8);
-}
-#playerDisplay , #computerDisplay{
-    font-size: 2.5rem;
-}
-#resultDisplay{
-    font-size: 3rem;
-    margin: 20px;
-   
-}
-.greenText , #PlayScoreDisplay{
-    color: rgb(23, 140, 23) ;
-}
-.redText , #ComputerScoreDisplay{
-    color: red;
+.errorDisplay{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
 }
