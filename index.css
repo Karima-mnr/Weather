@@ -1,59 +1,43 @@
 body{
-    display: flex;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsla(0, 0%, 73%);
-
-}
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color: hsla(0, 0%, 30%);
-    color: white;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-button:hover{
-    background-color: hsla(0, 0%, 40%);
-}
-button:active{
-    background-color: hsla(0, 0%, 50%);
-
-}
-#keys{
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    gap: 10px;
-    padding: 10px 10px;  
-}
-#calculator{
     font-family: Arial, sans-serif;
-    background-color: hsla(0, 0%, 15%);
-    max-width: 500px;
-    border-radius: 20px;
-    overflow: hidden;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
-    border: none;
-    background-color: hsla(0, 0%, 20%);
-    color: aliceblue;
+h1{
+    font-size: 3.5rem;
+    color: hsla(0, 3%, 11%, 0.848);
+    filter: drop-shadow( 0 0 5px black);
     font-weight: bold;
 }
-.operatorBtn{
-    background-color: hsla(35, 100%, 55%);
+#choices{
+    margin-bottom: 30px;
 }
-.operatorBtn:hover{
-    background-color: hsla(35, 100%, 60%);
+#choices button{
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 250px;
+    background-color: rgb(37, 104, 65);
+    cursor: pointer;
+    transition: background-color 0.5s  ease;
 }
-.operatorBtn:active{
-    background-color: hsla(35, 100%, 75%);
+#choices button:hover{
+    background-color: rgb(8, 171, 8);
+}
+#playerDisplay , #computerDisplay{
+    font-size: 2.5rem;
+}
+#resultDisplay{
+    font-size: 3rem;
+    margin: 20px;
+   
+}
+.greenText , #PlayScoreDisplay{
+    color: rgb(23, 140, 23) ;
+}
+.redText , #ComputerScoreDisplay{
+    color: red;
 }
